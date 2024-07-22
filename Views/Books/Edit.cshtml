@@ -1,0 +1,69 @@
+﻿@model BookStore.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Kitapı Düzenle</h1>
+
+<h4>Kitap</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BookId" />
+            <div class="form-group">
+                <label asp-for="BookTitle" class="control-label">Kitap Adı</label>
+                <input asp-for="BookTitle" class="form-control" />
+                <span asp-validation-for="BookTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookDescription" class="control-label">Kitap Açıklaması</label>
+                <input asp-for="BookDescription" class="form-control" />
+                <span asp-validation-for="BookDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookLanguage" class="control-label">Kitap Dili</label>
+                <input asp-for="BookLanguage" class="form-control" />
+                <span asp-validation-for="BookLanguage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookISBN" class="control-label">Kitap ISBN</label>
+                <input asp-for="BookISBN" class="form-control" />
+                <span asp-validation-for="BookISBN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookDatePublished" class="control-label">Kitap Yayınlanma Tarihi</label>
+                <input asp-for="BookDatePublished" class="form-control" />
+                <span asp-validation-for="BookDatePublished" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookPrice" class="control-label">Kitap Fiyatı</label>
+                <input asp-for="BookPrice" class="form-control" />
+                <span asp-validation-for="BookPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookAuthor" class="control-label">Kitap Yazarı</label>
+                <input asp-for="BookAuthor" class="form-control" />
+                <span asp-validation-for="BookAuthor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookImageUrl" class="control-label">Kitap Resim URL</label>
+                <input asp-for="BookImageUrl" class="form-control" />
+                <span asp-validation-for="BookImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-warning"><i class="fa-solid fa-arrow-left"></i> Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

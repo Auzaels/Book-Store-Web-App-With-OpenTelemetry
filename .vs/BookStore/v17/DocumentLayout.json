@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|c:\\users\\sadik\\desktop\\staj\\open telemetry\\bookstore\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|c:\\users\\sadik\\desktop\\staj\\open telemetry\\bookstore\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|c:\\users\\sadik\\desktop\\staj\\open telemetry\\bookstore\\viewmodel\\editroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|solutionrelative:viewmodel\\editroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|c:\\users\\sadik\\desktop\\staj\\open telemetry\\bookstore\\viewmodel\\addroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|solutionrelative:viewmodel\\addroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|c:\\users\\sadik\\desktop\\staj\\open telemetry\\bookstore\\viewmodel\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8169DBD3-5309-4632-905A-0C82D2057BF6}|BookStore.csproj|solutionrelative:viewmodel\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 274,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:05:52.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:04:59.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRoleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\UserRoleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\UserRoleViewModel.cs",
+              "ToolTip": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\UserRoleViewModel.cs",
+              "RelativeToolTip": "ViewModel\\UserRoleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:04:26.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditRoleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\EditRoleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\EditRoleViewModel.cs",
+              "ToolTip": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\EditRoleViewModel.cs",
+              "RelativeToolTip": "ViewModel\\EditRoleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:04:10.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddRoleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\AddRoleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AddRoleViewModel.cs",
+              "ToolTip": "C:\\Users\\sadik\\Desktop\\Staj\\Open Telemetry\\BookStore\\ViewModel\\AddRoleViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AddRoleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T13:04:09.713Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

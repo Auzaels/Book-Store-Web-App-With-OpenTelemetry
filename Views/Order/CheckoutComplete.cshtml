@@ -1,0 +1,45 @@
+﻿@model BookStore.Models.Order
+
+<h1>Siparişiniz için teşekkürler!</h1>
+
+<h5 class="mt-5">Sipariş Numaranız: @Model.OrderId</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Kitap</th>
+            <th>Fiyat</th>
+            <th>Miktar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            var itemTotal = item.Book.BookPrice * item.Quantity;
+            <tr>
+                <td>
+                    <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.BookId"><img src="@item.Book.BookImageUrl" style="height: 4em"></a>
+                </td>
+                <td>
+                    <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.BookId">@item.Book.BookTitle</a>
+                </td>
+                <td>
+                    @itemTotal.ToString("c")
+                </td>
+                <td>
+                    @item.Quantity
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+    <td></td>
+    <td class="text-right">
+        <strong>Toplam Tutar:</strong>
+    </td>
+    <td>
+        <strong>@Model?.OrderTotal.ToString("c")</strong>
+    </td>
+    <td></td>
+    </tfoot>
+</table>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BookStore.Models.Book>
+
+@{
+    ViewData["Title"] = "Mağaza";
+}
+
+<h2 class="my-4">Mağaza Sayfası</h2>
+
+
+<form asp-action="Index" class="col-2 my-1 p-2">
+    <div>
+        <div class="my-1">
+            <input type="text" name="searchString" placeholder="Kitap Adı veya Yazar" class="form-control-sm col-12" />
+        </div>
+        <div class="my-1">
+            <input type="number" name="minPrice" step="1" placeholder="Min. Fiyat" class="form-control-sm col-5" />&nbsp;&#8212;&nbsp;<input type="number" name="maxPrice" step="1" placeholder="Max. Fiyat" class="form-control-sm col-5" />
+        </div>
+        <input type="submit" value="Filtrele" class="btn btn-primary btn-sm" />
+        <a asp-action="Index" class="btn btn-secondary btn-sm float-right">Temizle</a>
+    </div>
+</form>
+
+
+<div class="row">
+    @foreach (var book in Model)
+    {
+        <div class="col-3">
+            <div class="card my-2 store-card">
+                <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@book.BookId">
+                    <img src="@book.BookImageUrl" class="card-img-top card-img-custom">
+                    <div class="card-body" style="height: 6em;">
+                        <h5 class="mb-3">@book.BookTitle</h5>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-text">@book.BookPrice.ToString("c")</span>
+                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.BookId" class="btn btn-primary cart-btn store-btn"><i class="fa-solid fa-cart-plus"></i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+</div>

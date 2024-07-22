@@ -1,0 +1,23 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Kayıt Doğrulama";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+            E-opsta göndericisi şuan için aktif durumda değil. <!--<a href=“https://aka.ms/aspaccountconf”> Mail gönderme işlemi düzeltme linki. </a> -->
+            Normalde bu e-posta ile gönderilir: <a id="confirm-link" href="@Model.EmailConfirmationUrl">Hesabınızı onaylamak için buraya tıklayın</a>
+</p>
+    }
+    else
+    {
+<p>
+        Please check your email to confirm your account.
+</p>
+    }
+}
+

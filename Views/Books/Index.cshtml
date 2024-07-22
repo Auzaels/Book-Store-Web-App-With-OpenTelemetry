@@ -1,0 +1,83 @@
+﻿@model IEnumerable<BookStore.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+
+    string HasImage(Book book)
+    {
+        if (book.BookImageUrl != "" && book.BookImageUrl != null)
+        {
+            return "fa-solid fa-check";
+        }
+        else
+        {
+            return "fa-solid fa-x";
+        }
+    }
+}
+
+<h1>Kitaplar</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary"><i class="fa-solid fa-book"></i> Kitap Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Kitap Adı
+            </th>
+            <th>
+                Kitap Yazarı
+            </th>
+            <th>
+                Kitap Dili
+            </th>
+            <th>
+                Kitap ISBN
+            </th>
+            <th>
+                Yayınlanma Tarihi
+            </th>
+            <th>
+                Kitap Fiyatı
+            </th>
+            <th>
+                Resimli Mi
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookAuthor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookLanguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookISBN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookDatePublished)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookPrice)
+            </td>
+            <td>
+                <i class="@HasImage(item)"></i>
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.BookId" class="btn btn-success"><i class="fa-solid fa-circle-info"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.BookId" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
